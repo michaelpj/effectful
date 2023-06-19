@@ -8,3 +8,12 @@ packages:
 allow-newer: cleff:base
            , cleff:template-haskell
            , freer-simple:template-haskell
+
+source-repository-package
+    type: git
+    location: https://github.com/lexi-lambda/eff
+    branch: 60f8a8c484cc579eb53cd0dd262836bde9094ddf
+    subdir: eff
+
+package effectful
+  flags: +benchmark-foreign-libraries
